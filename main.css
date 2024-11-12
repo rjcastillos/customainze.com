@@ -23,8 +23,9 @@ body {
   .kikifont { 
   font-family: 'Larsseit', sans-serif;
   font-family: 'Larsseit Bold', sans-serif;
+  text-transform: uppercase;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
 }
   
   .flashgreen {
