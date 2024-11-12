@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box; /* this universal selector impacts all and Adds content, padding and border living out Margin */
+  }
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0; /*Eliminates the left and right white spaces to the end of the page*/
+  }
+   .inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+  
+  .luciluci { /* Ilze's font*/
+  font-family: 'Lucida Handwriting Std', sans-serif;
+  font-weight: 400;
+  }
+
+  .kikifont { 
+  font-family: 'Larsseit', sans-serif;
+  font-family: 'Larsseit Bold', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+  
+  .flashgreen {
+    color: #2ddf5c;
+  }
+
+  .ilzefontcolor {
+    color:whitesmoke;
+    /*
+    color: #000074; /*Ilze's font color 
+    color:rgb(19, 16, 16);
+    font-size: 15px;
+    font-weight: bold;
+    transform: rotate(15deg);
+    padding-left: 370px;
+    padding-top: 410px; */
+  }
+ 
+  .kikifontcolor {
+    color:rgb(69, 69, 71);
+    /*
+    color: #000074; /*Ilze's font color 
+    color:rgb(19, 16, 16);
+    font-size: 15px;
+    font-weight: bold;
+    transform: rotate(15deg);
+    padding-left: 370px;
+    padding-top: 410px;
+    font-size: 15px;
+    font-weight: bold;
+     */
+  }
+  #maintext{
+    background: aqua;
+    padding: 10px;
+    /* width: 100% ;
+    height: 120px ; */
+    margin: 20px; 
+    border: black solid 5px; /* shorthand property , the expanded is in #id_allboxes */
+  }
+  
+  #id-allboxes{
+    background: aqua;
+    padding: 10px;
+    margin: 20px; 
+    border: black;
+    border-style: solid;
+    border-width: 5px;
+  }
+#id-wide{
+    background: url("../../TravelByBaking/img/BackBook_v09.webp");
+    width: 1000px;
+    height: 1000px;
+    
+}
+
+
+.main-header__brand{
+  color: blue;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.main-header {
+    width: 100%;
+    padding: 10px;
+    background: #ffffff; /* Kiki */
+    margin: 0;
+}
+
+
+
+.main-header > div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.main-nav {
+    display: inline-block;
+    text-align: center;
+    /*width: calc(100% - 70px);*/
+    vertical-align: middle;
+}
+
+.main-nav__items{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav__item {
+    display: inline-block;
+    margin: 0 16px;
+    text-align: center;
+    /* 
+    text-decoration: none;  
+    will not work here
+     */
+
+}
+.main-nav__item a {
+  text-decoration: none;
+  color: #0a0a41;
+  font-size: 15px;
+     /*   The next assigments apply to the underline in the links */
+  font-weight: bold;
+  padding: 3px 0;
+}
+
+/* .main-nav__item a:hover{
+  color: aqua;
+} 
+
+The below groups 2 rules (active and hover ) with the same assigment 
+ */
+
+.main-nav__item a:active,
+.main-nav__item a:hover
+{
+  color: rgb(86, 95, 95);
+  /*   The next assigments apply to the underline in the links */
+  border-bottom: 5px solid rgb(96, 100, 100);
+}
+.main-nav__item-cta a{
+  background: rgb(228, 226, 226);
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+.main-nav__item-cta a:hover,
+.main-nav__item-cta a:active{
+  color: blue;
+  border: none;
+}
