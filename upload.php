@@ -35,6 +35,11 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
   $uploadOk = 0;
 }
 
+$refinvoice = htmlspecialchars($_POST['proofp']);
+$item1 = $_POST['crystal1'];
+$item2 = $_POST['crystal2'];
+$item3 = $_POST['crystal3'];
+$item4 = $_POST['crystal4'];
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
   echo "Sorry, your file was not uploaded.";
@@ -43,10 +48,14 @@ if ($uploadOk == 0) {
   if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
     echo "Passing file $target_file </br>";
-    $output = file_get_contents("https://madredemisericordia.es/customainze.com/sendpicone.php?fileToEmail=$target_file");
+    echo "Ref $refinvoice </br>";
+    //$passURI="fileToEmail=$target_file&proofp=$refinvoice";
+    //echo " URI = $passURI </br>";
+    //$url_encoded = urlencode($passURI);
+    //echo "Encoded now = $url_encoded";
+    $output = file_get_contents("https://madredemisericordia.es/customainze.com/sendpicone.php?fileToEmail=$target_file&proofp=$refinvoice&crystal1=$item1&crystal2=$item2&crystal3=$item3&crystal4=$item4");
     echo $output;
-  } else {
+  } else 
     echo "Sorry, there was an error uploading your file.";
   }
-}
 ?>
